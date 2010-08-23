@@ -1,11 +1,10 @@
 <?php
 /*
 Plugin Name: WP E-Commerce User Management
-Plugin URI: http://polymathworkshop.com/WPEcommerceUM
 Description: This allows the Wordpress administrator to edit shop user data
 Version: 1.0
 Author: Poplicola
-Author URI: http://wepolymath.com
+Author URI: http://poplicola.com
 */
 
 /*  Copyright 2010 Jay Margalus  (email : hello@jaymargalus.com)
