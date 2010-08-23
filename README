@@ -1,0 +1,16 @@
+=== Plugin Name ===
+Contributors: Jay Margalus
+Author Link: http://wepolymath.com
+Tags: wp-ecommerce, user management
+Tested up to: 3.0.1
+
+Allows Wordpress administrators to edit user data saved by WP E-Commerce.
+
+== Description ==
+
+Allows Wordpress administrators to edit user data saved by WP E-Commerce.
+
+== Installation ==
+
+1. Upload WP-E-Commerce-User-Management to the Plugins directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
