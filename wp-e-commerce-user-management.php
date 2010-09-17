@@ -4,10 +4,10 @@ Plugin Name: WP E-Commerce User Management
 Description: This allows the Wordpress administrator to edit shop user data
 Version: 1.0
 Author: Poplicola
-Author URI: http://poplicola.com
+Author URI: http://jaymargalus.com
 */
 
-/*  Copyright 2010 Jay Margalus  (email : hello@jaymargalus.com)
+/*  Copyright 2010 Jay Margalus  (email : hi@poplicola.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
