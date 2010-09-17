@@ -78,9 +78,11 @@ function wpecom_user_mgmt() {
 			while ($counter<=$usercount) {
 				$user_ID=$counter; 
 				$meta_data = get_usermeta($user_ID, 'wpshpcrt_usr_profile');
-				echo "<p style='padding:0 0 10px;'><a href='admin.php?page=wpecomgmt&thepage=registered&userinfo=" . $user_ID . "'>";
-				echo $meta_data[2] . " " . $meta_data[3];
-				echo "</a></p>";
+				if (isset($meta_data[2]) || isset($meta_data[3]) ) {
+					echo "<p style='padding:0 0 10px;'><a href='admin.php?page=wpecomgmt&thepage=registered&userinfo=" . $user_ID . "'>";
+					echo $meta_data[2] . " " . $meta_data[3];
+					echo "</a></p>";
+				}
 				$counter++;
 			}
 		} else {
@@ -283,11 +285,14 @@ function wpecom_user_mgmt() {
 				$user_ID=$counter; 
 				$firstname = $wpdb->get_results( "SELECT value FROM wp_wpsc_submited_form_data WHERE log_id=" . $user_ID . " AND form_id=2" );
 				$lastname = $wpdb->get_results( "SELECT value FROM wp_wpsc_submited_form_data WHERE log_id=" . $user_ID . " AND form_id=3" );
-				echo "<p style='padding:0 0 10px;'><a href='admin.php?page=wpecomgmt&thepage=unregistered&userinfo=" . $user_ID . "'>";
 				$firstname = $firstname[0]->value;
 				$lastname = $lastname[0]->value;
-				echo $firstname . " " . $lastname;
-				echo "</a></p>";
+				if (isset($firstname) || isset($lastname) ) {
+					echo "<p style='padding:0 0 10px;'><a href='admin.php?page=wpecomgmt&thepage=unregistered&userinfo=" . $user_ID . "'>";
+				
+					echo $firstname . " " . $lastname;
+					echo "</a></p>";
+				}
 				$counter++;
 			}
 		} else {
